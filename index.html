@@ -17,20 +17,260 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/780a71466c.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
-            colors: {},
-            backgroundImage: {},
+            colors: {
+              "color-primary": "#F85559",
+            },
+            backgroundImage: {
+              "banner-img-1": "url('./images/banner1.png')",
+              "banner-img-2": "url('./images/banner2.png')",
+              "banner-img-3": "url('./images/banner3.png')",
+              "banner-img-4": "url('./images/banner4.png')",
+            },
           },
         },
       };
     </script>
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header></header>
-    <main><h1 class="text-3xl">boiler plate</h1></main>
+  <body class="font-lato">
+    <header class="md:container mx-auto px-4 md:my-10 lg:px-12">
+      <div
+        class="navbar bg-base-100 md:px-10 md:bg-color-primary rounded-[600px] lg:text-white md:py-6"
+      >
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal text-base">
+            <li><a class="mr-8 cursor-pointer hover:text-white">Home</a></li>
+            <li>
+              <a class="mr-8 cursor-pointer hover:text-white">About Us</a>
+            </li>
+            <li><a class="mr-8 cursor-pointer hover:text-white">Shop</a></li>
+            <li><a class="cursor-pointer hover:text-white">All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center pt-5 md:pt-0 md:gap-0">
+          <div class="dropdown absolute md:static right-2">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars mb-2 md:mt-3 text-2xl"></i>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 drop-shadow-[0_0_35px_rgba(0,0,0,0.25)] bg-base-100 rounded-box w-52 absolute -left-40"
+            >
+              <li><a class="mr-8 cursor-pointer">Home</a></li>
+              <li><a class="mr-8 cursor-pointer">About Us</a></li>
+              <li><a class="mr-8 cursor-pointer">Shop</a></li>
+              <li><a class="cursor-pointer">All Fruits</a></li>
+            </ul>
+          </div>
+          <a
+            class="flex order-first cursor-pointer lg:order-none title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0"
+          >
+            <img src="./images/logo.png" alt="logo" />
+            <span class="ml-3 text-4xl font-bold md:text-white"
+              >Fruit Burst</span
+            >
+          </a>
+        </div>
+        <div class="navbar-end hidden md:flex">
+          <div class="form-control w-[300px] relative">
+            <input
+              type="text"
+              placeholder="Search here"
+              class="py-3 px-4 input-bordered md:w-auto rounded-[50px] outline-none text-black"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass absolute right-4 top-4 text-black"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!-- carosel -->
+      <div class="carousel w-full mt-14 z-50 h-[500px] md:h-full">
+        <div
+          id="slide1"
+          class="carousel-item relative w-full bg-banner-img-1 bg-center"
+        >
+          <div
+            class="bg-gradient-to-b from-black to-transparent absolute w-full h-full opacity-80"
+          ></div>
+          <div class="text-white z-10 w-full shadow-xl">
+            <figure class="px-10 pt-10"></figure>
+            <div class="card-body mt-6 mb-44 items-center text-center">
+              <h2 class="card-title font-extrabold text-5xl md:text-7xl">
+                Exotic tastes at your <br />
+                doorstep
+              </h2>
+              <p class="text-xl my-6">
+                We supply highly quality organic products
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn bg-color-primary border-2 border-color-primary text-white hover:text-color-primary hover:border-color-primary"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform z-20 -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a
+              href="#slide4"
+              class="btn btn-circle border-none hover:text-black text-white bg-black"
+              >❮</a
+            >
+            <a
+              href="#slide2"
+              class="btn btn-circle border-none hover:text-black text-white bg-black"
+              >❯</a
+            >
+          </div>
+        </div>
+        <div
+          id="slide2"
+          class="carousel-item relative w-full bg-banner-img-2 bg-center"
+        >
+          <div
+            class="bg-gradient-to-b from-black to-transparent absolute w-full h-full opacity-80"
+          ></div>
+          <div class="text-white z-10 w-full shadow-xl">
+            <figure class="px-10 pt-10"></figure>
+            <div class="card-body mt-6 mb-44 items-center text-center">
+              <h2 class="card-title font-extrabold text-5xl md:text-7xl">
+                Exotic tastes at your <br />
+                doorstep
+              </h2>
+              <p class="text-xl my-6">
+                We supply highly quality organic products
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn bg-color-primary border-2 border-color-primary text-white hover:text-color-primary hover:border-color-primary"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform z-20 -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a
+              href="#slide1"
+              class="btn btn-circle border-none hover:text-black text-white bg-black"
+              >❮</a
+            >
+            <a
+              href="#slide3"
+              class="btn btn-circle border-none hover:text-black text-white bg-black"
+              >❯</a
+            >
+          </div>
+        </div>
+        <div
+          id="slide3"
+          class="carousel-item relative w-full bg-banner-img-3 bg-center"
+        >
+          <div
+            class="bg-gradient-to-b from-black to-transparent absolute w-full h-full opacity-80"
+          ></div>
+          <div class="text-white z-10 w-full shadow-xl">
+            <figure class="px-10 pt-10"></figure>
+            <div class="card-body mt-6 mb-44 items-center text-center">
+              <h2 class="card-title font-extrabold text-5xl md:text-7xl">
+                Exotic tastes at your <br />
+                doorstep
+              </h2>
+              <p class="text-xl my-6">
+                We supply highly quality organic products
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn bg-color-primary border-2 border-color-primary text-white hover:text-color-primary hover:border-color-primary"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform z-20 -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a
+              href="#slide2"
+              class="btn btn-circle border-none hover:text-black text-white bg-black"
+              >❮</a
+            >
+            <a
+              href="#slide4"
+              class="btn btn-circle border-none hover:text-black text-white bg-black"
+              >❯</a
+            >
+          </div>
+        </div>
+        <div
+          id="slide4"
+          class="carousel-item relative w-full bg-banner-img-2 bg-center"
+        >
+          <div
+            class="bg-gradient-to-b from-black to-transparent absolute w-full h-full opacity-80"
+          ></div>
+          <div class="text-white z-10 w-full shadow-xl">
+            <figure class="px-10 pt-10"></figure>
+            <div class="card-body mt-6 mb-44 items-center text-center">
+              <h2 class="card-title font-extrabold text-5xl md:text-7xl">
+                Exotic tastes at your <br />
+                doorstep
+              </h2>
+              <p class="text-xl my-6">
+                We supply highly quality organic products
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn bg-color-primary border-2 border-color-primary text-white hover:text-color-primary hover:border-color-primary"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform z-20 -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a
+              href="#slide4"
+              class="btn btn-circle border-none hover:text-black text-white bg-black"
+              >❮</a
+            >
+            <a
+              href="#slide1"
+              class="btn btn-circle border-none hover:text-black text-white bg-black"
+              >❯</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
     <footer></footer>
   </body>
 </html>
+
+<!-- hero -->
+
+<!-- carosel -->
+
+<!-- card -->
