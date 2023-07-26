@@ -51,11 +51,21 @@
       >
         <div class="navbar-start hidden lg:flex">
           <ul class="menu menu-horizontal text-base">
-            <li><a class="mr-8 cursor-pointer hover:text-white">Home</a></li>
             <li>
-              <a class="mr-8 cursor-pointer hover:text-white">About Us</a>
+              <a class="pl-0 xl:pl-4 xl:mr-6 cursor-pointer hover:text-white"
+                >Home</a
+              >
             </li>
-            <li><a class="mr-8 cursor-pointer hover:text-white">Shop</a></li>
+            <li>
+              <a class="pl-0 xl:pl-4 xl:mr-6 cursor-pointer hover:text-white"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a class="pl-0 xl:pl-4 xl:mr-6 cursor-pointer hover:text-white"
+                >Shop</a
+              >
+            </li>
             <li><a class="cursor-pointer hover:text-white">All Fruits</a></li>
           </ul>
         </div>
@@ -66,7 +76,7 @@
             </label>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 drop-shadow-[0_0_35px_rgba(0,0,0,0.25)] bg-base-100 rounded-box w-52 absolute -left-40"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 drop-shadow-[0_0_35px_rgba(0,0,0,0.25)] bg-base-100 rounded-box w-52 absolute -left-40 md:left-52"
             >
               <li><a class="mr-8 cursor-pointer">Home</a></li>
               <li><a class="mr-8 cursor-pointer">About Us</a></li>
@@ -84,15 +94,17 @@
           </a>
         </div>
         <div class="navbar-end hidden md:flex">
-          <div class="form-control w-[300px] relative">
+          <div class="form-control w-[270px] relative">
             <input
               type="text"
               placeholder="Search here"
               class="py-3 px-4 input-bordered md:w-auto rounded-[50px] outline-none text-black"
             />
-            <i
-              class="fa-solid fa-magnifying-glass absolute right-4 top-4 text-black"
-            ></i>
+            <a href=""
+              ><i
+                class="fa-solid fa-magnifying-glass absolute right-4 top-4 text-black"
+              ></i
+            ></a>
           </div>
         </div>
       </div>
@@ -130,13 +142,13 @@
             <a
               href="#slide4"
               class="btn btn-circle border-none hover:text-black text-white bg-black"
-              >❮</a
-            >
+              ><i class="fa-solid fa-chevron-left text-xl"></i
+            ></a>
             <a
               href="#slide2"
               class="btn btn-circle border-none hover:text-black text-white bg-black"
-              >❯</a
-            >
+              ><i class="fa-solid fa-chevron-right text-xl"></i
+            ></a>
           </div>
         </div>
         <div
@@ -171,13 +183,13 @@
             <a
               href="#slide1"
               class="btn btn-circle border-none hover:text-black text-white bg-black"
-              >❮</a
-            >
+              ><i class="fa-solid fa-chevron-left text-xl"></i
+            ></a>
             <a
               href="#slide3"
               class="btn btn-circle border-none hover:text-black text-white bg-black"
-              >❯</a
-            >
+              ><i class="fa-solid fa-chevron-right text-xl"></i
+            ></a>
           </div>
         </div>
         <div
@@ -212,13 +224,13 @@
             <a
               href="#slide2"
               class="btn btn-circle border-none hover:text-black text-white bg-black"
-              >❮</a
-            >
+              ><i class="fa-solid fa-chevron-left text-xl"></i
+            ></a>
             <a
               href="#slide4"
               class="btn btn-circle border-none hover:text-black text-white bg-black"
-              >❯</a
-            >
+              ><i class="fa-solid fa-chevron-right text-xl"></i
+            ></a>
           </div>
         </div>
         <div
@@ -253,18 +265,352 @@
             <a
               href="#slide4"
               class="btn btn-circle border-none hover:text-black text-white bg-black"
-              >❮</a
-            >
+              ><i class="fa-solid fa-chevron-left text-xl"></i
+            ></a>
             <a
               href="#slide1"
               class="btn btn-circle border-none hover:text-black text-white bg-black"
-              >❯</a
-            >
+              ><i class="fa-solid fa-chevron-right text-xl"></i
+            ></a>
           </div>
         </div>
       </div>
     </header>
-    <main></main>
+    <main class="md:container mx-auto px-4 md:my-10 lg:px-12">
+      <!-- deals -->
+      <div class="md:flex mt-20 md:mt-52">
+        <div class="text-center md:text-left">
+          <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+          <p class="text-base mt-6 mb-8 w-4/5 mx-auto md:mx-0">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-flow-col mb-10 justify-center md:justify-normal gap-10 text-center auto-cols-max"
+        >
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 15"></span>
+            </span>
+            days
+          </div>
+          <div class="flex flex-col relative">
+            <span class="absolute font-lg text-2xl top-[10px] -left-[24px]"
+              ><i class="fa-solid fa-ellipsis-vertical"></i
+            ></span>
+
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 10"></span>
+            </span>
+            hours
+          </div>
+          <div class="flex flex-col relative">
+            <span class="absolute font-lg text-2xl top-[10px] -left-[24px]"
+              ><i class="fa-solid fa-ellipsis-vertical"></i
+            ></span>
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 24"></span>
+            </span>
+            min
+          </div>
+          <div class="flex flex-col relative">
+            <span class="absolute font-lg text-2xl top-[10px] -left-[24px]"
+              ><i class="fa-solid fa-ellipsis-vertical"></i
+            ></span>
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 13"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+      <!-- cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:flex gap-6">
+        <div
+          class="card border-[1px] w-full border-slate-200 rounded-lg px-8 py-5"
+        >
+          <figure class="px-10 pt-10">
+            <img src="/images/fruit6.png" alt="apple" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
+            <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+            <p class="text-slate-500 mb-1">Apples</p>
+            <p class="text-red-400 mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </p>
+            <div class="card-actions">
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                onclick="my_modal_1.showModal()"
+              >
+                Details
+              </button>
+
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box max-h-full">
+                  <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit6.png" alt="apple" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-2xl">Apples</h2>
+                      <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+                      <p class="text-slate-500 mb-1">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <p class="text-red-400 mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </p>
+                      <div class="card-actions">
+                        <!-- Open the modal using ID.showModal() method -->
+
+                        <div class="modal-action">
+                          <button
+                            class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                          >
+                            Buy Now
+                          </button>
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button
+                            class="btn bg-white hover:bg-color-primary border-2 border-color-primary text-color-primary hover:text-white hover:border-color-primary"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card border-[1px] w-full border-slate-200 rounded-lg px-8 py-5"
+        >
+          <figure class="px-10 pt-10">
+            <img src="/images/fruit7.png" alt="orange" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
+            <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+            <p class="text-slate-500 mb-1">Oranges</p>
+            <p class="text-red-400 mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </p>
+            <div class="card-actions">
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                onclick="my_modal_2.showModal()"
+              >
+                Details
+              </button>
+
+              <dialog id="my_modal_2" class="modal">
+                <form method="dialog" class="modal-box max-h-full">
+                  <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit7.png" alt="Oranges" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-2xl">Oranges</h2>
+                      <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+                      <p class="text-slate-500 mb-1">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <p class="text-red-400 mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </p>
+                      <div class="card-actions">
+                        <!-- Open the modal using ID.showModal() method -->
+
+                        <div class="modal-action">
+                          <button
+                            class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                          >
+                            Buy Now
+                          </button>
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button
+                            class="btn bg-white hover:bg-color-primary border-2 border-color-primary text-color-primary hover:text-white hover:border-color-primary"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card border-[1px] w-full border-slate-200 rounded-lg px-8 py-5"
+        >
+          <figure class="px-10 pt-10">
+            <img src="/images/fruit9.png" alt="banana" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
+            <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+            <p class="text-slate-500 mb-1">Banana</p>
+            <p class="text-red-400 mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </p>
+            <div class="card-actions">
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                onclick="my_modal_3.showModal()"
+              >
+                Details
+              </button>
+
+              <dialog id="my_modal_3" class="modal">
+                <form method="dialog" class="modal-box max-h-full">
+                  <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit9.png" alt="banana" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-2xl">Banana</h2>
+                      <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+                      <p class="text-slate-500 mb-1">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <p class="text-red-400 mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </p>
+                      <div class="card-actions">
+                        <!-- Open the modal using ID.showModal() method -->
+
+                        <div class="modal-action">
+                          <button
+                            class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                          >
+                            Buy Now
+                          </button>
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button
+                            class="btn bg-white hover:bg-color-primary border-2 border-color-primary text-color-primary hover:text-white hover:border-color-primary"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card border-[1px] w-full border-slate-200 rounded-lg px-8 py-5"
+        >
+          <figure class="px-10 pt-10">
+            <img src="/images/fruit8.png" alt="dragon" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
+            <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+            <p class="text-slate-500 mb-1">Dragon</p>
+            <p class="text-red-400 mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </p>
+            <div class="card-actions">
+              <!-- Open the modal using ID.showModal() method -->
+              <button
+                class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                onclick="my_modal_4.showModal()"
+              >
+                Details
+              </button>
+
+              <dialog id="my_modal_4" class="modal">
+                <form method="dialog" class="modal-box max-h-full">
+                  <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit8.png" alt="apple" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-2xl">Dragon</h2>
+                      <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+                      <p class="text-slate-500 mb-1">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <p class="text-red-400 mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </p>
+                      <div class="card-actions">
+                        <!-- Open the modal using ID.showModal() method -->
+
+                        <div class="modal-action">
+                          <button
+                            class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                          >
+                            Buy Now
+                          </button>
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button
+                            class="btn bg-white hover:bg-color-primary border-2 border-color-primary text-color-primary hover:text-white hover:border-color-primary"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
