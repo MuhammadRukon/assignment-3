@@ -235,7 +235,7 @@
         </div>
         <div
           id="slide4"
-          class="carousel-item relative w-full bg-banner-img-2 bg-center"
+          class="carousel-item relative w-full bg-banner-img-4 bg-center"
         >
           <div
             class="bg-gradient-to-b from-black to-transparent absolute w-full h-full opacity-80"
@@ -278,336 +278,568 @@
     </header>
     <main class="md:container mx-auto px-4 md:my-10 lg:px-12">
       <!-- deals -->
-      <div class="md:flex mt-20 md:mt-52">
-        <div class="text-center md:text-left">
-          <h2 class="text-5xl font-extrabold">Deal of the day</h2>
-          <p class="text-base mt-6 mb-8 w-4/5 mx-auto md:mx-0">
-            Contrary to popular belief, is not simply random text. It has roots
-            in a piece of classical Latin literature from 45 BC, making it over
-            2000 years old.
-          </p>
+      <div class="mt-20 md:mt-52">
+        <div class="md:flex justify-between">
+          <div class="text-center md:text-left">
+            <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+            <p class="text-base mt-6 mb-8 w-4/5 mx-auto md:mx-0">
+              Bangladesh is a green country. It is full of trees, flowers, and
+              fruits. Many types of fruits are available here round the year.
+              The summer is called the season of fruits. Many delicious fruits
+              are available in Summer
+            </p>
+          </div>
+
+          <div
+            class="grid grid-flow-col mb-10 justify-center md:justify-normal gap-10 text-center auto-cols-max"
+          >
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 15"></span>
+              </span>
+              days
+            </div>
+            <div class="flex flex-col relative">
+              <span class="absolute font-lg text-2xl top-[10px] -left-[24px]"
+                ><i class="fa-solid fa-ellipsis-vertical"></i
+              ></span>
+
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 10"></span>
+              </span>
+              hours
+            </div>
+            <div class="flex flex-col relative">
+              <span class="absolute font-lg text-2xl top-[10px] -left-[24px]"
+                ><i class="fa-solid fa-ellipsis-vertical"></i
+              ></span>
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 24"></span>
+              </span>
+              min
+            </div>
+            <div class="flex flex-col relative">
+              <span class="absolute font-lg text-2xl top-[10px] -left-[24px]"
+                ><i class="fa-solid fa-ellipsis-vertical"></i
+              ></span>
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 13"></span>
+              </span>
+              sec
+            </div>
+          </div>
         </div>
+        <!-- cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:flex gap-6">
+          <div
+            class="card border-[1px] w-full border-slate-200 rounded-lg px-8 py-5"
+          >
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit6.png" alt="apple" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
+              <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+              <p class="text-slate-500 mb-1">Apples</p>
+              <p class="text-red-400 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                  onclick="my_modal_1.showModal()"
+                >
+                  Details
+                </button>
 
-        <div
-          class="grid grid-flow-col mb-10 justify-center md:justify-normal gap-10 text-center auto-cols-max"
-        >
-          <div class="flex flex-col">
-            <span class="countdown font-mono text-5xl">
-              <span style="--value: 15"></span>
-            </span>
-            days
-          </div>
-          <div class="flex flex-col relative">
-            <span class="absolute font-lg text-2xl top-[10px] -left-[24px]"
-              ><i class="fa-solid fa-ellipsis-vertical"></i
-            ></span>
+                <dialog id="my_modal_1" class="modal">
+                  <form method="dialog" class="modal-box max-h-full">
+                    <div class="card bg-base-100">
+                      <figure class="px-10 pt-10">
+                        <img src="/images/fruit6.png" alt="apple" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">Apples</h2>
+                        <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+                        <p class="text-slate-500 mb-1">
+                          Professional employees are there for you to pick the
+                          most amazing and fresh fruits.
+                        </p>
+                        <p class="text-red-400 mb-3">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <div class="card-actions">
+                          <div class="modal-action">
+                            <button
+                              class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                            >
+                              Buy Now
+                            </button>
 
-            <span class="countdown font-mono text-5xl">
-              <span style="--value: 10"></span>
-            </span>
-            hours
+                            <button
+                              class="btn bg-white hover:bg-color-primary border-2 border-color-primary text-color-primary hover:text-white hover:border-color-primary"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
           </div>
-          <div class="flex flex-col relative">
-            <span class="absolute font-lg text-2xl top-[10px] -left-[24px]"
-              ><i class="fa-solid fa-ellipsis-vertical"></i
-            ></span>
-            <span class="countdown font-mono text-5xl">
-              <span style="--value: 24"></span>
-            </span>
-            min
+          <div
+            class="card border-[1px] w-full border-slate-200 rounded-lg px-8 py-5"
+          >
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit7.png" alt="orange" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
+              <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+              <p class="text-slate-500 mb-1">Oranges</p>
+              <p class="text-red-400 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                  onclick="my_modal_2.showModal()"
+                >
+                  Details
+                </button>
+
+                <dialog id="my_modal_2" class="modal">
+                  <form method="dialog" class="modal-box max-h-full">
+                    <div class="card bg-base-100">
+                      <figure class="px-10 pt-10">
+                        <img src="/images/fruit7.png" alt="Oranges" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">Oranges</h2>
+                        <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+                        <p class="text-slate-500 mb-1">
+                          Professional employees are there for you to pick the
+                          most amazing and fresh fruits.
+                        </p>
+                        <p class="text-red-400 mb-3">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <div class="card-actions">
+                          <div class="modal-action">
+                            <button
+                              class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                            >
+                              Buy Now
+                            </button>
+
+                            <button
+                              class="btn bg-white hover:bg-color-primary border-2 border-color-primary text-color-primary hover:text-white hover:border-color-primary"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
           </div>
-          <div class="flex flex-col relative">
-            <span class="absolute font-lg text-2xl top-[10px] -left-[24px]"
-              ><i class="fa-solid fa-ellipsis-vertical"></i
-            ></span>
-            <span class="countdown font-mono text-5xl">
-              <span style="--value: 13"></span>
-            </span>
-            sec
+          <div
+            class="card border-[1px] w-full border-slate-200 rounded-lg px-8 py-5"
+          >
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit9.png" alt="banana" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
+              <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+              <p class="text-slate-500 mb-1">Banana</p>
+              <p class="text-red-400 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                  onclick="my_modal_3.showModal()"
+                >
+                  Details
+                </button>
+
+                <dialog id="my_modal_3" class="modal">
+                  <form method="dialog" class="modal-box max-h-full">
+                    <div class="card bg-base-100">
+                      <figure class="px-10 pt-10">
+                        <img src="/images/fruit9.png" alt="banana" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">Banana</h2>
+                        <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+                        <p class="text-slate-500 mb-1">
+                          Professional employees are there for you to pick the
+                          most amazing and fresh fruits.
+                        </p>
+                        <p class="text-red-400 mb-3">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <div class="card-actions">
+                          <div class="modal-action">
+                            <button
+                              class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                            >
+                              Buy Now
+                            </button>
+                            <button
+                              class="btn bg-white hover:bg-color-primary border-2 border-color-primary text-color-primary hover:text-white hover:border-color-primary"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card border-[1px] w-full border-slate-200 rounded-lg px-8 py-5"
+          >
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit8.png" alt="dragon" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
+              <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+              <p class="text-slate-500 mb-1">Dragon</p>
+              <p class="text-red-400 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                  onclick="my_modal_4.showModal()"
+                >
+                  Details
+                </button>
+
+                <dialog id="my_modal_4" class="modal">
+                  <form method="dialog" class="modal-box max-h-full">
+                    <div class="card bg-base-100">
+                      <figure class="px-10 pt-10">
+                        <img src="/images/fruit8.png" alt="apple" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">Dragon</h2>
+                        <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
+                        <p class="text-slate-500 mb-1">
+                          Professional employees are there for you to pick the
+                          most amazing and fresh fruits.
+                        </p>
+                        <p class="text-red-400 mb-3">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                        <div class="card-actions">
+                          <div class="modal-action">
+                            <button
+                              class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
+                            >
+                              Buy Now
+                            </button>
+                            <button
+                              class="btn bg-white hover:bg-color-primary border-2 border-color-primary text-color-primary hover:text-white hover:border-color-primary"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <button
+            class="btn bg-color-primary border-2 border-color-primary text-white hover:text-color-primary hover:border-color-primary"
+          >
+            Shop All
+          </button>
+        </div>
+      </div>
+      <!-- team -->
+      <div class="mt-28 bg-banner-img-1 relative bg-center">
+        <div class="hero bg-banner-img-1 relative bg-center">
+          <div class="hero-overlay bg-opacity-70"></div>
+          <div class="z-50 text-white text-center py-24">
+            <h2 class="text-5xl font-extrabold text-white">
+              Meet the team section
+            </h2>
+            <p class="text-base mt-6 w-1/2 mx-auto">
+              Bangladesh is a green country. It is full of trees, flowers, and
+              fruits. Many types of fruits are available here round the year.
+              The summer is called the season of fruits.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <div class="card w-full border-slate-200 rounded-lg px-8">
+                <figure class="px-10 pt-10">
+                  <img src="/images/member1.png" alt="dragon" />
+                </figure>
+                <div class="card-body items-center">
+                  <h2 class="card-title text-2xl whitespace-nowrap">
+                    Ronaldo Hossain
+                  </h2>
+
+                  <p class="mb-1">Fruits Expert</p>
+                  <p class="text-white mb-3 flex gap-3 text-lg">
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-instagram bg-color-primary p-2 rounded-full"
+                      ></i
+                    ></a>
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-twitter bg-color-primary p-2 rounded-full"
+                      ></i
+                    ></a>
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-facebook bg-color-primary p-2 rounded-full"
+                      ></i
+                    ></a>
+                  </p>
+                </div>
+              </div>
+              <div class="card w-full border-slate-200 rounded-lg px-8">
+                <figure class="px-10 pt-10">
+                  <img src="/images/member2.png" alt="dragon" />
+                </figure>
+                <div class="card-body items-center">
+                  <h2 class="card-title text-2xl whitespace-nowrap">
+                    Angelina Akter
+                  </h2>
+
+                  <p class="mb-1">Fruits Expert</p>
+                  <p class="text-white mb-3 flex gap-3 text-lg">
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-instagram bg-color-primary p-2 rounded-full"
+                      ></i
+                    ></a>
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-twitter bg-color-primary p-2 rounded-full"
+                      ></i
+                    ></a>
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-facebook bg-color-primary p-2 rounded-full"
+                      ></i
+                    ></a>
+                  </p>
+                </div>
+              </div>
+              <div class="card w-full border-slate-200 rounded-lg px-8">
+                <figure class="px-10 pt-10">
+                  <img src="/images/member3.png" alt="dragon" />
+                </figure>
+                <div class="card-body items-center">
+                  <h2 class="card-title text-2xl whitespace-nowrap">
+                    Messi Ahmed
+                  </h2>
+
+                  <p class="mb-1">Fruits Expert</p>
+                  <p class="text-white mb-3 flex gap-3 text-lg">
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-instagram bg-color-primary p-2 rounded-full"
+                      ></i
+                    ></a>
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-twitter bg-color-primary p-2 rounded-full"
+                      ></i
+                    ></a>
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-facebook bg-color-primary p-2 rounded-full"
+                      ></i
+                    ></a>
+                  </p>
+                </div>
+              </div>
+              <div class="card w-full border-slate-200 rounded-lg px-8">
+                <figure class="px-10 pt-10">
+                  <img src="/images/member4.png" alt="dragon" />
+                </figure>
+                <div class="card-body items-center">
+                  <h2 class="card-title text-2xl whitespace-nowrap">
+                    Keka Ferdousi
+                  </h2>
+
+                  <p class="mb-1">Fruits Expert</p>
+                  <p class="text-white mb-3 flex gap-3 text-lg">
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-instagram bg-color-primary p-2 rounded-full"
+                      ></i
+                    ></a>
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-twitter bg-color-primary p-2 rounded-full"
+                      ></i
+                    ></a>
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-facebook bg-color-primary p-2 rounded-full"
+                      ></i
+                    ></a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:flex gap-6">
-        <div
-          class="card border-[1px] w-full border-slate-200 rounded-lg px-8 py-5"
-        >
-          <figure class="px-10 pt-10">
-            <img src="/images/fruit6.png" alt="apple" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
-            <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
-            <p class="text-slate-500 mb-1">Apples</p>
-            <p class="text-red-400 mb-3">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <div class="card-actions">
-              <!-- Open the modal using ID.showModal() method -->
-              <button
-                class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
-                onclick="my_modal_1.showModal()"
-              >
-                Details
-              </button>
-
-              <dialog id="my_modal_1" class="modal">
-                <form method="dialog" class="modal-box max-h-full">
-                  <div class="card bg-base-100">
-                    <figure class="px-10 pt-10">
-                      <img src="/images/fruit6.png" alt="apple" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title text-2xl">Apples</h2>
-                      <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
-                      <p class="text-slate-500 mb-1">
-                        Professional employees are there for you to pick the
-                        most amazing and fresh fruits.
-                      </p>
-                      <p class="text-red-400 mb-3">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                      </p>
-                      <div class="card-actions">
-                        <!-- Open the modal using ID.showModal() method -->
-
-                        <div class="modal-action">
-                          <button
-                            class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
-                          >
-                            Buy Now
-                          </button>
-                          <!-- if there is a button in form, it will close the modal -->
-                          <button
-                            class="btn bg-white hover:bg-color-primary border-2 border-color-primary text-color-primary hover:text-white hover:border-color-primary"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </dialog>
-            </div>
-          </div>
+      <!-- choose -->
+      <div class="mt-24">
+        <div class="text-center">
+          <h2 class="text-5xl font-extrabold">Why Choose Us</h2>
+          <p class="text-base my-8 w-4/5 mx-auto">
+            Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+          </p>
         </div>
-        <div
-          class="card border-[1px] w-full border-slate-200 rounded-lg px-8 py-5"
-        >
-          <figure class="px-10 pt-10">
-            <img src="/images/fruit7.png" alt="orange" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
-            <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
-            <p class="text-slate-500 mb-1">Oranges</p>
-            <p class="text-red-400 mb-3">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <div class="card-actions">
-              <!-- Open the modal using ID.showModal() method -->
-              <button
-                class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
-                onclick="my_modal_2.showModal()"
-              >
-                Details
-              </button>
-
-              <dialog id="my_modal_2" class="modal">
-                <form method="dialog" class="modal-box max-h-full">
-                  <div class="card bg-base-100">
-                    <figure class="px-10 pt-10">
-                      <img src="/images/fruit7.png" alt="Oranges" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title text-2xl">Oranges</h2>
-                      <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
-                      <p class="text-slate-500 mb-1">
-                        Professional employees are there for you to pick the
-                        most amazing and fresh fruits.
-                      </p>
-                      <p class="text-red-400 mb-3">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                      </p>
-                      <div class="card-actions">
-                        <!-- Open the modal using ID.showModal() method -->
-
-                        <div class="modal-action">
-                          <button
-                            class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
-                          >
-                            Buy Now
-                          </button>
-                          <!-- if there is a button in form, it will close the modal -->
-                          <button
-                            class="btn bg-white hover:bg-color-primary border-2 border-color-primary text-color-primary hover:text-white hover:border-color-primary"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </dialog>
+        <div class="md:flex">
+          <div>
+            <div>
+              <div class="md:flex items-start gap-4 mb-10 text-center md:text-left">
+                <i
+                  class="fa-solid fa-users mt-4 mb-2  p-3 text-slate-900 bg-slate-300 rounded-full"
+                ></i>
+                <div >
+                  <h2 class="text-2xl font-extrabold">Dedicated Team</h2>
+                  <hr class="bg-slate-800 h-[2px] my-4 text-black w-24 mx-auto md:mx-0" />
+                  <p class="text-slate-500 mb-1 w-4/5 mx-auto md:mx-0">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div
-          class="card border-[1px] w-full border-slate-200 rounded-lg px-8 py-5"
-        >
-          <figure class="px-10 pt-10">
-            <img src="/images/fruit9.png" alt="banana" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
-            <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
-            <p class="text-slate-500 mb-1">Banana</p>
-            <p class="text-red-400 mb-3">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <div class="card-actions">
-              <!-- Open the modal using ID.showModal() method -->
-              <button
-                class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
-                onclick="my_modal_3.showModal()"
-              >
-                Details
-              </button>
-
-              <dialog id="my_modal_3" class="modal">
-                <form method="dialog" class="modal-box max-h-full">
-                  <div class="card bg-base-100">
-                    <figure class="px-10 pt-10">
-                      <img src="/images/fruit9.png" alt="banana" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title text-2xl">Banana</h2>
-                      <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
-                      <p class="text-slate-500 mb-1">
-                        Professional employees are there for you to pick the
-                        most amazing and fresh fruits.
-                      </p>
-                      <p class="text-red-400 mb-3">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                      </p>
-                      <div class="card-actions">
-                        <!-- Open the modal using ID.showModal() method -->
-
-                        <div class="modal-action">
-                          <button
-                            class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
-                          >
-                            Buy Now
-                          </button>
-                          <!-- if there is a button in form, it will close the modal -->
-                          <button
-                            class="btn bg-white hover:bg-color-primary border-2 border-color-primary text-color-primary hover:text-white hover:border-color-primary"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </dialog>
+            <div>
+              <div class="md:flex items-start gap-4 mb-10 text-center md:text-left">
+                <i
+                  class="fa-solid fa-users mt-4 mb-2  p-3 text-slate-900 bg-slate-300 rounded-full"
+                ></i>
+                <div >
+                  <h2 class="text-2xl font-extrabold">Dedicated Team</h2>
+                  <hr class="bg-slate-800 h-[2px] my-4 text-black w-24 mx-auto md:mx-0" />
+                  <p class="text-slate-500 mb-1 w-4/5 mx-auto md:mx-0">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div
-          class="card border-[1px] w-full border-slate-200 rounded-lg px-8 py-5"
-        >
-          <figure class="px-10 pt-10">
-            <img src="/images/fruit8.png" alt="dragon" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title text-2xl">12.90$ - 18.85$</h2>
-            <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
-            <p class="text-slate-500 mb-1">Dragon</p>
-            <p class="text-red-400 mb-3">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <div class="card-actions">
-              <!-- Open the modal using ID.showModal() method -->
-              <button
-                class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
-                onclick="my_modal_4.showModal()"
-              >
-                Details
-              </button>
-
-              <dialog id="my_modal_4" class="modal">
-                <form method="dialog" class="modal-box max-h-full">
-                  <div class="card bg-base-100">
-                    <figure class="px-10 pt-10">
-                      <img src="/images/fruit8.png" alt="apple" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title text-2xl">Dragon</h2>
-                      <hr class="bg-black h-[1px] my-2 text-black w-4/5" />
-                      <p class="text-slate-500 mb-1">
-                        Professional employees are there for you to pick the
-                        most amazing and fresh fruits.
-                      </p>
-                      <p class="text-red-400 mb-3">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                      </p>
-                      <div class="card-actions">
-                        <!-- Open the modal using ID.showModal() method -->
-
-                        <div class="modal-action">
-                          <button
-                            class="btn bg-color-primary border-2 border-color-primary hover:bg-white text-white hover:text-color-primary hover:border-color-primary"
-                          >
-                            Buy Now
-                          </button>
-                          <!-- if there is a button in form, it will close the modal -->
-                          <button
-                            class="btn bg-white hover:bg-color-primary border-2 border-color-primary text-color-primary hover:text-white hover:border-color-primary"
-                          >
-                            Close
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </dialog>
+            <div>
+              <div class="md:flex items-start gap-4 mb-10 text-center md:text-left">
+                <i
+                  class="fa-solid fa-users mt-4 mb-2  p-3 text-slate-900 bg-slate-300 rounded-full"
+                ></i>
+                <div >
+                  <h2 class="text-2xl font-extrabold">Dedicated Team</h2>
+                  <hr class="bg-slate-800 h-[2px] my-4 text-black w-24 mx-auto md:mx-0" />
+                  <p class="text-slate-500 mb-1 w-4/5 mx-auto md:mx-0">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
             </div>
+            
           </div>
+          <div><img src="./images/whychoose1.png" alt="" /></div>
+          <div>
+            <div class="mt-5">
+              <div class="md:flex  flex-row-reverse items-start gap-4 mb-10 text-center md:text-right">
+                <i
+                  class="fa-solid fa-users mt-4 mb-2 p-3 text-slate-900 bg-slate-300 rounded-full"
+                ></i>
+                <div>
+                  <h2 class="text-2xl font-extrabold">Dedicated Team</h2>
+                  <hr class="bg-slate-800 h-[2px] my-4 text-black w-24 mx-auto md:mx-0 md:ml-auto " />
+                  <p class="text-slate-500 mb-1 w-4/5 mx-auto md:mx-0 md:ml-auto">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+              <div class="md:flex  flex-row-reverse items-start gap-4 mb-10 text-center md:text-right">
+                <i
+                  class="fa-solid fa-users mt-4 mb-2 p-3 text-slate-900 bg-slate-300 rounded-full"
+                ></i>
+                <div>
+                  <h2 class="text-2xl font-extrabold">Dedicated Team</h2>
+                  <hr class="bg-slate-800 h-[2px] my-4 text-black w-24 mx-auto md:mx-0 md:ml-auto " />
+                  <p class="text-slate-500 mb-1 w-4/5 mx-auto md:mx-0 md:ml-auto">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+              <div class="md:flex   flex-row-reverse items-start gap-4 mb-10 text-center md:text-right">
+                <i
+                  class="fa-solid fa-users mt-4 mb-2 p-3 text-slate-900 bg-slate-300 rounded-full"
+                ></i>
+                <div>
+                  <h2 class="text-2xl font-extrabold">Dedicated Team</h2>
+                  <hr class="bg-slate-800 h-[2px] my-4 text-black w-24 mx-auto md:mx-0 md:ml-auto " />
+                  <p class="text-slate-500 mb-1 w-4/5 mx-auto md:mx-0 md:ml-auto">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </main>
